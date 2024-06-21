@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/MacBookAir/repoistory dest/Tahadil_co/static",
+      "program": "/Users/MacBookAir/repoistory dest/Tahadil_co/static/build/Debug/outDebug"
+    }
+  ]
+}
