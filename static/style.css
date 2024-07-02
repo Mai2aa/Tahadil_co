@@ -88,6 +88,7 @@ header p{
     gap: 30px;
   }
    .about {
+    font-family: "Bricolage Grotesque", sans-serif;
     flex: 1;
     width: 50%;
     display: flex;
@@ -100,6 +101,7 @@ header p{
     text-align: center; 
   }
  .clients, .employees {
+    font-family: "Bricolage Grotesque", sans-serif;
     margin-bottom: 50px;
     flex: 1;
 
@@ -122,15 +124,24 @@ header p{
   }
   .projects {
     width: 50%;
+    margin-bottom: 50px;
+    flex: 1;
+    font-family: "Bricolage Grotesque", sans-serif;
     
 
 
   }
   footer {
-    background-color: grey;
-    height: 200px;
+    background-color: #182524;
+    height: 50px;
     position: relative;
     overflow: hidden;
+
+}
+footer p {
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #E2F1E6;
+  font-size: small;
 
 }
 @media screen and (max-width:600px){
