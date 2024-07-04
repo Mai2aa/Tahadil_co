@@ -1,16 +1,36 @@
-* {
+.projects {
     box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 50px;
+    flex: 1;
+    font-family: "Bricolage Grotesque", sans-serif;
+ 
+  
+}
+.projects h2 {
+  text-align: center;
 }
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+
   }
   
+  .mySlides img {
+    width: 100%;
+    height: auto;
+  }
   /* Hide the images by default */
   .mySlides {
     display: none;
   }
   
+  .mySlides:first-child{
+    display: block;
+  }
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
     cursor: pointer;
@@ -21,22 +41,26 @@
   .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
+    margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    transition: 0.6s ease;
     -webkit-user-select: none;
   }
   
   /* Position the "next button" to the right */
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -51,7 +75,10 @@
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    top: 8px;
+    left: 16px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   /* Container for image text */
@@ -60,6 +87,12 @@
     background-color: #222;
     padding: 2px 16px;
     color: white;
+    border-radius: 3px;
+    
+  }
+  .row {
+    display: flex;
+    justify-content: center;
   }
   
   .row:after {
@@ -70,10 +103,19 @@
   
   /* Six columns side by side */
   .column {
-    float: left;
-    width: 16.66%;
+    flex: 1;
+    max-width: 100px;
+    margin: 0 2px;
+  }
+  .column img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
   }
   
+  .column img:hover {
+    opacity: 0.7;
+  }
   /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;

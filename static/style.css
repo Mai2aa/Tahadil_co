@@ -98,7 +98,9 @@ header p{
     flex-direction: column; /* Stack content vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    text-align: center; 
+    text-align: center;
+    animation-name: animation1;
+    animation-duration: 1.5s;
   }
  .clients, .employees {
     font-family: "Bricolage Grotesque", sans-serif;
@@ -122,15 +124,7 @@ header p{
     padding: 10px; 
     margin-left: 20px;
   }
-  .projects {
-    width: 50%;
-    margin-bottom: 50px;
-    flex: 1;
-    font-family: "Bricolage Grotesque", sans-serif;
-    
-
-
-  }
+  
   footer {
     background-color: #182524;
     height: 50px;
@@ -143,6 +137,18 @@ footer p {
   color: #E2F1E6;
   font-size: small;
 
+}
+
+/*Adding animation in the about section*/
+@keyframes animation1 {
+  from {
+    translate: 0 150vw;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
 }
 @media screen and (max-width:600px){
     .sections{
