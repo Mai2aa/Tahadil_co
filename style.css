@@ -83,6 +83,20 @@ header p{
     padding: 40px;
     margin: 0;
   }
+  b {
+    font-family: "Borel", cursive;
+  }
+  h4 {
+    background-color: #E2F1E6;
+    display: block;
+    border-radius: 50px;
+    width:fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
   .sections {
     display: flex;
     gap: 30px;
@@ -132,7 +146,7 @@ header p{
     overflow: hidden;
 
 }
-footer p {
+i {
   font-family: "Bricolage Grotesque", sans-serif;
   color: #E2F1E6;
   font-size: small;
