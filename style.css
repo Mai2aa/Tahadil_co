@@ -113,8 +113,7 @@ header p{
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     text-align: center;
-    animation-name: animation1;
-    animation-duration: 1.5s;
+
   }
  .clients, .employees {
     font-family: "Bricolage Grotesque", sans-serif;
@@ -154,21 +153,42 @@ i {
 }
 
 /*Adding animation in the about section*/
-@keyframes animation1 {
-  from {
-    translate: 0 150vw;
-    scale: 200% 1;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  to {
-    translate: 0 0;
-    scale: 100% 1;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+.animate-paragraph {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Add a delay to each paragraph */
+.animate-paragraph:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.animate-paragraph:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.animate-paragraph:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.animate-paragraph:nth-child(4) {
+  animation-delay: 1s;
 }
 @media screen and (max-width:600px){
     .sections{
         flex-direction: column;
     }
-    .about, .clients, .employees{
+    .about, .clients, .employees, .projects{
         width: 100%;
         flex: 1 1 100%;
     }
