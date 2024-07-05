@@ -73,3 +73,12 @@ i {
     font-size: small;
   
   }
+  @media screen and (max-width:768px){
+    .sections{
+        flex-direction: column;
+    }
+    h3, h4{
+        width: 100%;
+        flex: 1 1 100%;
+    }
+}

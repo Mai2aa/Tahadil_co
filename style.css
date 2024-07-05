@@ -184,7 +184,7 @@ i {
 .animate-paragraph:nth-child(4) {
   animation-delay: 1s;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:768px){
     .sections{
         flex-direction: column;
     }
