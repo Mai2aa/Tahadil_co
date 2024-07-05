@@ -70,3 +70,18 @@ i{
     font-size: small;
   
   }
+  @media screen and (max-width:768px){
+    body{
+        flex-direction: column;
+    }
+    h2, p{
+        width: 100%;
+        flex: 1 1 100%;
+        width:fit-content;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Bricolage Grotesque", sans-serif ;
+    }
+    }
