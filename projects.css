@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+header {
+    height: 30vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.header-photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.sidebar {
+    text-align: center;
+    margin-top: 20px;
+}
+.sidebar a{
+    
+    margin-right: 40px;
+    display: inline;
+    color: #182524;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar a:hover {
+    color: #666;
+}
+h3{
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+p {
+    background-color: #E2F1E6;
+    display: block;
+    border-radius: 50px;
+    width:fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
